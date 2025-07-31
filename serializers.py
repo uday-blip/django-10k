@@ -1,8 +1,9 @@
 from rest_framework import serializers
-from .models import Customers
+from .models import Students
 
-
-class customerserializer(serializers.ModelSerializer):
-    class Meta:
-        model=Customers
-        fields=['id','cust_name','mob','amount']
+class studentSerializers(serializers.ModelSerializer):
+    class Meta :
+        model=Students
+        fields=[
+            'id','stu_name','roll_no'
+        ]
